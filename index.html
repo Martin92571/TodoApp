@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Todo List</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/todos.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500' rel='stylesheet' type='text/css'>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="assets/css/animate.css">
+</head>
+<body>
+		
+		<div class="loginModal hide">
+				
+		<div class="login-form">
+			
+		<div class="main-div">
+			<div class="cancel"><button><i class="fas fa-times"></i></button></div>
+			<div class="panel">
+			<h2>Login</h2>
+			<p>Please enter your email and password</p>
+			</div>
+			<form id="Login">
+		
+				<div class="form-group">
+		
+		
+					<input type="email" class="form-control" id="inputEmail" placeholder="Email Address">
+		
+				</div>
+		
+				<div class="form-group">
+		
+					<input type="password" class="form-control" id="inputPassword" placeholder="Password">
+		
+				</div>
+				<div class="forgot">
+				<a href="reset.html">Forgot password?</a>
+		</div>
+				<button type="submit" class="btn btn-primary">Enter</button>
+		
+			</form>
+			</div>
+		
+		</div></div>
+
+		<div class="signup-form hide ">
+			<div class="form-container">
+				<form class="form-container"action="/examples/actions/confirmation.php" method="post">
+					<div class="cancelSignUp"><button><i class="fas fa-times"></i></button></div>
+					<h2>Sign Up</h2>
+					
+					
+					<div class="form-group">
+						<label>Username</label>
+						<input type="text" class="form-control" name="username" required="required">
+					</div>
+					<div class="form-group">
+						<label>Email Address</label>
+						<input type="email" class="form-control" name="email" required="required">
+					</div>
+					<div class="form-group">
+						<label>Password</label>
+						<input type="password" class="form-control" name="password" required="required">
+					</div>
+					<div class="form-group">
+						<label>Confirm Password</label>
+						<input type="password" class="form-control" name="confirm_password" required="required">
+					</div>
+					<div class="form-group">
+						<button type="submit" class="btn btn-primary btn-block btn-lg">Sign Up</button>
+					</div>
+					<div class="text-center">Already have an account? <a href="#">Login here</a></div>
+				</form>
+			  </div>
+			</div>	
+<div class="position">
+		<div class="signBtn">
+			<button type="button" class="btn btn-info  login">Login</button>
+			<button type="button" class="btn btn-primary signUp">SignUp</button>
+		</div>
+		
+		
+<div id="container">
+	<h1>To-Do List <span id="toggle-form"><i class="fa fa-plus"></i></span></h1>
+	<input type="text" placeholder="Add New Todo">
+
+	<ul>
+		<li><span><i class="fa fa-trash"></i></span> Go To Potions Class</li>
+		<li><span><i class="fa fa-trash"></i></span> Buy New Robes</li>
+		<li><span><i class="fa fa-trash"></i></span> Visit Hagrid</li>
+	</ul>
+</div>
+</div>
+<script type="text/javascript" src="assets/js/todos.js"></script>
+</body>
+</html>

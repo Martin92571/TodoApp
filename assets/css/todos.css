@@ -1,0 +1,278 @@
+body {
+	font-family: Roboto;
+  background: -webkit-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%); /* W3C */
+
+	
+}
+
+#container ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+#container h1 {
+	background: #2980b9;
+	color: white;
+	margin: 0 ;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	font-size: 1.2em ;
+	font-weight: normal ;
+}
+
+.fa-plus {
+	float: right;
+}
+
+li {
+	background: #fff;
+	height: 3em;
+    line-height: 3.2em;
+    color: #666;
+    font-size: 1.2em;
+}
+
+li:nth-child(2n){
+	background: #f7f7f7;
+}
+
+li span {
+	background: #e74c3c;
+	height: 3em;
+	margin-right: 20px;
+	text-align: center;
+	color: white;
+	width: 0;
+	display: inline-block;
+	transition: 0.2s linear;
+	opacity: 0;
+}
+
+li:hover span {
+	width: 4em;
+	opacity: 1.0;
+}
+.svg-inline--fa{
+	font-size: 1.2em;
+}
+input {
+	font-size: 1rem;
+	color: #2980b9;
+	background-color: #f7f7f7;
+	width: 100%;
+	padding: 13px 13px 13px 20px;
+	box-sizing: border-box;
+	border: 3px solid rgba(0,0,0,0);
+}
+
+input:focus{
+	background: #fff;
+	border: 3px solid #2980b9;
+	outline: none;
+}
+
+#container {
+	width: 100%;
+	margin: 100px auto;
+	background: #f7f7f7;
+	box-shadow: 0 0 3px rgba(0,0,0, 0.1);
+}
+
+.completed {
+	color: gray;
+	text-decoration: line-through;
+}
+.position{
+	position: relative;
+	margin: 5em auto;
+    width: 50%;
+    height: 100%;
+    display: flex; 
+}
+
+
+.form-heading { color:#fff; font-size:23px;}
+.panel h2{ color:#444444; font-size:18px; margin:0 0 8px 0;}
+.panel p { color:#777777; font-size:14px; margin-bottom:30px; line-height:24px;}
+.login-form .form-control {
+  background: #f7f7f7 none repeat scroll 0 0;
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+  font-size: 14px;
+  height: 50px;
+  line-height: 50px;
+}
+.main-div {
+  background: #ffffff none repeat scroll 0 0;
+  border-radius: 25px;
+  margin: 10px auto 30px;
+  max-width: 30%;
+  padding: 50px 70px 70px 71px;
+  position: relative;
+}
+
+.login-form .form-group {
+  margin-bottom:10px;
+}
+.login-form{ text-align:center;}
+.forgot a {
+  color: #777777;
+  font-size: 14px;
+  text-decoration: underline;
+}
+.login-form  .btn.btn-primary {
+  background: #3cb094 none repeat scroll 0 0;
+  border-color: #3cb094;
+  color: #ffffff;
+  font-size: 14px;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  padding: 0;
+}
+.forgot {
+  text-align: left; margin-bottom:30px;
+}
+.botto-text {
+  color: #ffffff;
+  font-size: 14px;
+  margin: auto;
+}
+.login-form .btn.btn-primary.reset {
+  background: #3cb094 none repeat scroll 0 0;
+}
+.back { text-align: left; margin-top:10px;}
+.back a {color: #444444; font-size: 13px;text-decoration: none;}
+.loginModal,.signup-form{
+	position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+   
+	z-index: 10;
+	display: flex;
+    flex-direction: column;
+	justify-content: center;
+	background: -webkit-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%); /* W3C */
+
+}
+.cancel{
+	position: absolute;
+	top: 3px;
+    right: 2px;
+}
+.cancel button{
+	border-radius: 50%;
+    border: 1px solid #FFF;
+    background-color: #FFF;
+}
+.cancel .svg-inline--fa {
+	font-size: 1.8em;
+	color:#3cb094;
+}
+.hide{
+	display:none;
+}
+.signBtn{
+	position: absolute;
+    right: 0%;
+	font-size: 1.2em !important;
+	margin-top: 0.3em;
+
+    
+}
+.signBtn button{
+	padding: 0.4em 1.5em !important;
+}
+
+
+.signup-form form {
+	color: #9ba5a8;
+	border-radius: 3px;
+	margin-bottom: 15px;
+	background: #fff;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+	padding: 2em;
+	width:25%;
+	height: 85%;
+	margin: auto;
+}
+.signup-form h2 {
+	color: #333;
+	font-weight: bold;
+	margin-top: 0;
+}
+.signup-form hr {
+	margin: 0 -30px 20px;
+}    
+.signup-form .form-group {
+	margin-bottom: 20px;
+}
+.signup-form label {
+	font-weight: normal;
+	font-size: 13px;
+}
+.signup-form .btn {        
+	font-size: 16px;
+	font-weight: bold;
+	background: #49c1a2;
+	border: none;
+	min-width: 140px;
+}
+.signup-form .btn:hover, .signup-form .btn:focus {
+	background: #3cb094;
+	outline: none !important;
+}
+.signup-form a {
+	color: #fff;
+	text-decoration: underline;
+}
+.signup-form a:hover {
+	text-decoration: none;
+}
+.signup-form form a {
+	color: #49c1a2;
+	text-decoration: none;
+}	
+.signup-form form a:hover {
+	text-decoration: underline;
+}
+.form-control {		
+	min-height: 41px;
+	box-shadow: none;
+	border-color: #e1e4e5;
+}
+.form-control:focus {
+	border-color: #49c1a2;
+}
+.form-control, .btn {        
+	border-radius: 3px;
+}
+.form-container{
+	position: relative;
+}
+.cancelSignUp{
+	position: absolute;
+	top: 3px;
+    right: 2px;
+}
+.cancelSignUp button{
+	border-radius: 50%;
+    border: 1px solid #FFF;
+    background-color: #FFF;
+}
+.cancelSignUp .svg-inline--fa {
+	font-size: 1.8em;
+	color:#3cb094;
+}
