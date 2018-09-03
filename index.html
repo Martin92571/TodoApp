@@ -5,10 +5,10 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/todos.css">
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500' rel='stylesheet' type='text/css'>
 	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-	
-	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 <link rel="stylesheet" href="assets/css/animate.css">
 </head>
 <body>
@@ -49,31 +49,32 @@
 
 		<div class="signup-form hide ">
 			<div class="form-container">
-				<form class="form-container"action="/examples/actions/confirmation.php" method="post">
-					<div class="cancelSignUp"><button><i class="fas fa-times"></i></button></div>
+				<form class="form-container">
+					<div class="cancelSignUp"><i class="fas fa-times"></i></div>
 					<h2>Sign Up</h2>
 					
 					
 					<div class="form-group">
-						<label>Username</label>
-						<input type="text" class="form-control" name="username" required="required">
+						<label>Username <span class="usernameError"></span></label>
+						<input type="text" class="form-control username" name="username" required="required">
 					</div>
 					<div class="form-group">
-						<label>Email Address</label>
-						<input type="email" class="form-control" name="email" required="required">
+						<label>Email Address <span class="Error emailError"></span></label>
+						<input type="email" class="form-control email" name="email" required="required">
 					</div>
 					<div class="form-group">
-						<label>Password</label>
-						<input type="password" class="form-control" name="password" required="required">
+						<label>Password <span class="Error passwordError"></span></label>
+						<input type="password" class="form-control password" name="password" required="required">
 					</div>
 					<div class="form-group">
-						<label>Confirm Password</label>
-						<input type="password" class="form-control" name="confirm_password" required="required">
+						<label>Confirm Password <span class="Error confirm_passwordError"></span></span></label>
+						<input type="password" class="form-control confirm_password" name="confirm_password" required="required">
 					</div>
 					<div class="form-group">
-						<button type="submit" class="btn btn-primary btn-block btn-lg">Sign Up</button>
+							
+						<button type="button" class="btn btn-primary btn-block btn-lg signUpBtn">Sign Up</button>
 					</div>
-					<div class="text-center">Already have an account? <a href="#">Login here</a></div>
+					<div class="text-center">Already have an account? <span class="loginRedirect" >Login here</span></div>
 				</form>
 			  </div>
 			</div>	
@@ -86,7 +87,7 @@
 		
 <div id="container">
 	<h1>To-Do List <span id="toggle-form"><i class="fa fa-plus"></i></span></h1>
-	<input type="text" placeholder="Add New Todo">
+	<input type="text" placeholder="Add New Todo" maxlength="80">
 
 	<ul>
 		<li><span><i class="fa fa-trash"></i></span> Go To Potions Class</li>
